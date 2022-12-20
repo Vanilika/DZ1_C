@@ -1,14 +1,21 @@
-﻿int numberA = Convert.ToInt32(Console.ReadLine());
+﻿// Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
+int numberA = Convert.ToInt32(Console.ReadLine());
 int numberB = Convert.ToInt32(Console.ReadLine());
 int max = 0;
+int min = 0;
 
 if(numberA > numberB)
-{
-    Console.Write("Максимум = ");
-    Console.WriteLine(max=numberA);
-}
+{ 
+    max = numberA;
+    min = numberB;
+    }
 else
 {
-    Console.Write("Максимум = ");
-    Console.WriteLine(max=numberB);
+    max = numberB;
+    min = numberA;
 }
+
+Console.Write("число большее = ");
+Console.WriteLine(max);
+Console.Write("число меньшее = ");
+Console.WriteLine(min);
